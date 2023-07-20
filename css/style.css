@@ -1,3 +1,4 @@
+/* Estilos generales */
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -17,20 +18,21 @@
 .inactive {
     display: none;
 }
-  nav {
+/* NavBar */
+nav {
     display: flex;
     justify-content: space-between;
     padding: 0 24px;
     border-bottom: 1px solid var(--very-light-pink);
 }
-  .menu {
+.menu {
     display: none;
 }
-  .logo {
+.logo {
     width: 100px;
 }
-  .navbar-left ul,
-  .navbar-right ul {
+.navbar-left ul,
+.navbar-right ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -38,35 +40,35 @@
     align-items: center;
     height: 60px;
 }
-  .navbar-left {
+.navbar-left {
     display: flex;
 }
-  .navbar-left ul {
+.navbar-left ul {
     margin-left: 12px;
 }
-  .navbar-left ul li a,
-  .navbar-right ul li a {
+.navbar-left ul li a,
+.navbar-right ul li a {
     text-decoration: none;
     color: var(--very-light-pink);
     border: 1px solid var(--white);
     padding: 8px;
     border-radius: 8px;
 }
-  .navbar-left ul li a:hover,
-  .navbar-right ul li a:hover {
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
     border: 1px solid var(--hospital-green);
     color: var(--hospital-green);
 }
-  .navbar-email {
+.navbar-email {
     color: var(--very-light-pink);
     font-size: var(--sm);
     margin-right: 12px;
     cursor: pointer;
 }
-  .navbar-shopping-cart {
+.navbar-shopping-cart {
     position: relative;
 }
-  .navbar-shopping-cart div {
+.navbar-shopping-cart div {
     width: 16px;
     height: 16px;
     background-color: var(--hospital-green);
@@ -80,6 +82,7 @@
     justify-content: center;
     align-items: center;
 }
+/* Menu Escritorio */
 .desktop-menu {
     /* con esta linea position, movimos el menu de la clase 7 al lado  izquierdo */
     position: absolute;
@@ -118,6 +121,39 @@
     margin-bottom: 20px;
     display: inline-block;
 }
+/* Menu Mobile */
+.mobile-menu {
+    position: absolute;
+    top: 60px;
+    padding: 24px;
+}
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+}
+  .mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+  .mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+  .mobile-menu ul li {
+    margin-bottom: 24px;
+}
+  .email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+}
+  .sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green) !important;
+}
+
+
 @media (max-width: 640px) {
     .menu {
       display: block;
