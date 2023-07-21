@@ -10,7 +10,7 @@ const burgerMenu = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 //Union con clase 13 product detail
 const menuCarIcon = document.querySelector('.navbar-shopping-cart');
-const aside = document.querySelector('.product-detail');
+const shoppingCarContainer = document.querySelector('#shoppingCarContainer');
 //8. llamamos a al etiqueta cards-container
 const cardsContainer = document.querySelector('.cards-container');
 
@@ -27,11 +27,11 @@ function toogleDesktopMenu() {
 
 function toogleMobileMenu() {
     // Cuando abrimos el menu mobile y tambien el del carrito de comrpas
-    //ambos estan presnetes y no se cierran, hay que decirle, que mientras abrimos el uno, el otro menu se cierre
+    //ambos estan presentes y no se cierran, hay que decirle, que mientras abrimos el uno, el otro menu se cierre
     //para ello, haremos lo siguiente:
-    const isAsideClosed = aside.classList.contains('inactive'); // con esto rpeguntamso si esta activa
+    const isAsideClosed = shoppingCarContainer.classList.contains('inactive'); // con esto rpeguntamso si esta activa
     if(!isAsideClosed) {
-        aside.classList.add('inactive');
+        shoppingCarContainer.classList.add('inactive');
     }
     mobileMenu.classList.toggle('inactive');
 }
@@ -41,7 +41,7 @@ function toogleCarMenu() {
     if(!isMobileMenuClosed) {
         mobileMenu.classList.add('inactive');
     }
-    aside.classList.toggle('inactive');
+    shoppingCarContainer.classList.toggle('inactive');
 }
 
 /*
