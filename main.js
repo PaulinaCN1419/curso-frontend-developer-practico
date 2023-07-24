@@ -65,6 +65,22 @@ productList.push ({
     price: 1200,
     image: 'https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JkZW5hZG9yJTIwZGUlMjBtZXNhfGVufDB8fDB8fHww&w=1000&q=80',
 });
+productList.push ({
+    name: 'Bike',
+    price: 120,
+    // Solo para el ejemplo usaremos la misma imagen
+    image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+});
+productList.push ({
+    name: 'Monitor',
+    price: 420,
+    image: 'https://www.profesionalreview.com/wp-content/uploads/2020/01/image4.jpg',
+});
+productList.push ({
+    name: 'Ordenador',
+    price: 1200,
+    image: 'https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JkZW5hZG9yJTIwZGUlMjBtZXNhfGVufDB8fDB8fHww&w=1000&q=80',
+});
 
 /*
 Como paso posterior haremos una funcion para, con ayuda de un for recorrer los objetos creados en 
